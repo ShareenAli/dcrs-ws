@@ -23,7 +23,7 @@ public class InseServer {
         CourseOperations courseOperations = new CourseOperations();
         courseOperations.initializeValues("INSE", "Inse Server");
 
-        WsThread wsThread = new WsThread(courseOperations, "http://localhost:7896/ws/inseserver");
+        WsThread wsThread = new WsThread(courseOperations, "http://localhost:8202/ws/inseserver");
         wsThread.start();
 
         try {

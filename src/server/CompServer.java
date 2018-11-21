@@ -23,7 +23,7 @@ public class CompServer {
         CourseOperations courseOperations = new CourseOperations();
         courseOperations.initializeValues("COMP", "comp server");
 
-        WsThread wsThread = new WsThread(courseOperations, "http://localhost:7896/ws/compserver");
+        WsThread wsThread = new WsThread(courseOperations, "http://localhost:8200/ws/compserver");
         wsThread.start();
 
         try {

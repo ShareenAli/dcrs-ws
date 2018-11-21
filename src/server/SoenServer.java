@@ -23,7 +23,7 @@ public class SoenServer {
         CourseOperations courseOperations = new CourseOperations();
         courseOperations.initializeValues("SOEN", "SOEN Server");
 
-        WsThread wsThread = new WsThread(courseOperations, "http://localhost:7896/ws/soenserver");
+        WsThread wsThread = new WsThread(courseOperations, "http://localhost:8201/ws/soenserver");
         wsThread.start();
 
         try {
