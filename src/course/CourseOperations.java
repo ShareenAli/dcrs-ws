@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-@WebService(endpointInterface = "course.CourseOperations")
+@WebService(endpointInterface = "course.CourseInterface")
 public class CourseOperations implements CourseInterface {
     private Logger logs;
 
